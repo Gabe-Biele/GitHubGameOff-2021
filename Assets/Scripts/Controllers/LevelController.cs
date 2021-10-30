@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    public List<Vector2> Waypoints;
+    public List<GameObject> Waypoints;
 
     // Start is called before the first frame update
     void Start()

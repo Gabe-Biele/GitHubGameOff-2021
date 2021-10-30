@@ -15,7 +15,7 @@ public class EnemyController : MonoBehaviour
         levelController = GameObject.Find("SceneScriptsObject").GetComponent<LevelController>();
 
         currentWaypointCursor = 0;
-        currentWaypoint = levelController.Waypoints[currentWaypointCursor];
+        currentWaypoint = levelController.Waypoints[currentWaypointCursor].transform.position;
     }
 
     void FixedUpdate()
@@ -23,7 +23,7 @@ public class EnemyController : MonoBehaviour
         if(Vector2.Distance(this.transform.position, currentWaypoint) < 0.01f)
         {
             currentWaypointCursor++;
-            currentWaypoint = levelController.Waypoints[currentWaypointCursor];
+            currentWaypoint = levelController.Waypoints[currentWaypointCursor].transform.position;
         }
 
         this.transform.position = Vector2.MoveTowards(transform.position, currentWaypoint, 0.05f);
