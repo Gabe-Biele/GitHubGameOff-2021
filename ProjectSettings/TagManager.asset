@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Monsters
+    uniqueID: 3050854457
+    locked: 0
   - name: Ammo
     uniqueID: 2195053601
     locked: 0

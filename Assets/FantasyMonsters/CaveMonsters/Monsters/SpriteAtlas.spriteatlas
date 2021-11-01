@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 8b279a22ab8103845a1d346d76feb8f3, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 5184831053750644559, guid: df997ea064489f84aa9ec02ea0f6f4cf, type: 3}
+  - {fileID: -6983649135101308852, guid: df997ea064489f84aa9ec02ea0f6f4cf, type: 3}
+  - {fileID: -1828946549344447192, guid: df997ea064489f84aa9ec02ea0f6f4cf, type: 3}
+  - {fileID: -7252215782646672311, guid: df997ea064489f84aa9ec02ea0f6f4cf, type: 3}
+  - {fileID: -6079965141102547391, guid: df997ea064489f84aa9ec02ea0f6f4cf, type: 3}
+  - {fileID: -458185587419916677, guid: df997ea064489f84aa9ec02ea0f6f4cf, type: 3}
+  - {fileID: 4345086733073366625, guid: df997ea064489f84aa9ec02ea0f6f4cf, type: 3}
+  - {fileID: -524195514793821918, guid: 6963ab23d2f045346be871119837e36e, type: 3}
+  - {fileID: -7252215782646672311, guid: 6963ab23d2f045346be871119837e36e, type: 3}
+  - {fileID: 5617316583316421107, guid: 6963ab23d2f045346be871119837e36e, type: 3}
+  - {fileID: -5673618120071735642, guid: 6963ab23d2f045346be871119837e36e, type: 3}
+  - {fileID: -1381065623766834176, guid: 6963ab23d2f045346be871119837e36e, type: 3}
+  - {fileID: -222513487695332513, guid: 28442bc4b10fa97458fc47dc13e9dd68, type: 3}
+  - {fileID: -677169109488044968, guid: 28442bc4b10fa97458fc47dc13e9dd68, type: 3}
+  - {fileID: 5617316583316421107, guid: 28442bc4b10fa97458fc47dc13e9dd68, type: 3}
+  - {fileID: 7526030366876421344, guid: 28442bc4b10fa97458fc47dc13e9dd68, type: 3}
+  - {fileID: -2871890732423532646, guid: 28442bc4b10fa97458fc47dc13e9dd68, type: 3}
+  - {fileID: 5184831053750644559, guid: d9786946c4e72434cb174e526fa382a7, type: 3}
+  - {fileID: -6983649135101308852, guid: d9786946c4e72434cb174e526fa382a7, type: 3}
+  - {fileID: -1828946549344447192, guid: d9786946c4e72434cb174e526fa382a7, type: 3}
+  - {fileID: -7252215782646672311, guid: d9786946c4e72434cb174e526fa382a7, type: 3}
+  - {fileID: -6079965141102547391, guid: d9786946c4e72434cb174e526fa382a7, type: 3}
+  - {fileID: -458185587419916677, guid: d9786946c4e72434cb174e526fa382a7, type: 3}
+  - {fileID: 4345086733073366625, guid: d9786946c4e72434cb174e526fa382a7, type: 3}
+  - {fileID: 5184831053750644559, guid: cfebf538519b6e340a85bf83f02063d0, type: 3}
+  - {fileID: -6983649135101308852, guid: cfebf538519b6e340a85bf83f02063d0, type: 3}
+  - {fileID: -1828946549344447192, guid: cfebf538519b6e340a85bf83f02063d0, type: 3}
+  - {fileID: -7252215782646672311, guid: cfebf538519b6e340a85bf83f02063d0, type: 3}
+  - {fileID: -6079965141102547391, guid: cfebf538519b6e340a85bf83f02063d0, type: 3}
+  - {fileID: -458185587419916677, guid: cfebf538519b6e340a85bf83f02063d0, type: 3}
+  - {fileID: 4345086733073366625, guid: cfebf538519b6e340a85bf83f02063d0, type: 3}
+  - {fileID: -222513487695332513, guid: 2e1b8f29666ad00448e52e284ce4f1c3, type: 3}
+  - {fileID: -677169109488044968, guid: 2e1b8f29666ad00448e52e284ce4f1c3, type: 3}
+  - {fileID: 5617316583316421107, guid: 2e1b8f29666ad00448e52e284ce4f1c3, type: 3}
+  - {fileID: 7526030366876421344, guid: 2e1b8f29666ad00448e52e284ce4f1c3, type: 3}
+  - {fileID: -2871890732423532646, guid: 2e1b8f29666ad00448e52e284ce4f1c3, type: 3}
+  - {fileID: -222513487695332513, guid: 306903ba18c180f46ac3783156892cb4, type: 3}
+  - {fileID: -677169109488044968, guid: 306903ba18c180f46ac3783156892cb4, type: 3}
+  - {fileID: -2871890732423532646, guid: 306903ba18c180f46ac3783156892cb4, type: 3}
+  - {fileID: 7526030366876421344, guid: 306903ba18c180f46ac3783156892cb4, type: 3}
+  - {fileID: -7218880734553994459, guid: 306903ba18c180f46ac3783156892cb4, type: 3}
+  - {fileID: 5184831053750644559, guid: fd05c08ddb7a08d4b8496fd71abd0838, type: 3}
+  - {fileID: -6983649135101308852, guid: fd05c08ddb7a08d4b8496fd71abd0838, type: 3}
+  - {fileID: -1828946549344447192, guid: fd05c08ddb7a08d4b8496fd71abd0838, type: 3}
+  - {fileID: -7252215782646672311, guid: fd05c08ddb7a08d4b8496fd71abd0838, type: 3}
+  - {fileID: 4345086733073366625, guid: fd05c08ddb7a08d4b8496fd71abd0838, type: 3}
+  - {fileID: -6079965141102547391, guid: fd05c08ddb7a08d4b8496fd71abd0838, type: 3}
+  - {fileID: -458185587419916677, guid: fd05c08ddb7a08d4b8496fd71abd0838, type: 3}
+  - {fileID: -222513487695332513, guid: aaff5c8d7d4ecf047a61bf575b95355f, type: 3}
+  - {fileID: -677169109488044968, guid: aaff5c8d7d4ecf047a61bf575b95355f, type: 3}
+  - {fileID: -2871890732423532646, guid: aaff5c8d7d4ecf047a61bf575b95355f, type: 3}
+  - {fileID: 7526030366876421344, guid: aaff5c8d7d4ecf047a61bf575b95355f, type: 3}
+  - {fileID: -7218880734553994459, guid: aaff5c8d7d4ecf047a61bf575b95355f, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Tail
+  - LeftFront
+  - HeadNormal
+  - HeadAngry
+  - Body
+  - HeadDead
+  - LefBack
+  - Leg
+  - HeadAngry
+  - HeadAttack
+  - Body
+  - HeadDead
+  - Leg
+  - HeadAngry
+  - HeadAttack
+  - Body
+  - HeadDead
+  - Tail
+  - LegFront
+  - HeadNormal
+  - HeadAngry
+  - Body
+  - HeadDead
+  - LegBack
+  - Tail
+  - LeftFront
+  - HeadNormal
+  - HeadAngry
+  - Body
+  - HeadDead
+  - LefBack
+  - Leg
+  - HeadAngry
+  - HeadAttack
+  - Body
+  - HeadDead
+  - Leg
+  - HeadNormal
+  - HeadArngry
+  - Body
+  - HeadDead
+  - Tail
+  - LeftFront
+  - HeadNormal
+  - HeadAngry
+  - LeftBack
+  - Body
+  - HeadDead
+  - Leg
+  - HeadNormal
+  - HeadArngry
+  - Body
+  - HeadDead
+  m_RenderDataMap: {}
+  m_Tag: SpriteAtlas
+  m_IsVariant: 0

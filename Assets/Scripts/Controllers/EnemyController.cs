@@ -6,30 +6,31 @@ namespace BieleStudios.GitHubGameOff.Controllers
 {
     public class EnemyController : MonoBehaviour
     {
+        [Header("Monster Stats")]
+        public float Speed = 0.01f;
+
         private LevelController levelController;
 
         private Vector2 currentWaypoint;
         private int currentWaypointCursor;
-        private float speed;
 
         // Start is called before the first frame update
         void Start()
         {
             levelController = GameObject.Find("SceneScriptsObject").GetComponent<LevelController>();
 
-            speed = 0.05f;
             currentWaypointCursor = 0;
             currentWaypoint = levelController.Waypoints[currentWaypointCursor].transform.position;
         }
 
-        public Vector2 GetCurrentWaypoint()
+        public int GetCurrentWaypoint()
         {
-            return currentWaypoint;
+            return currentWaypointCursor;
         }
 
         public float GetPredictedDistance(float time)
         {
-            return speed * time*50; 
+            return Speed * time*50; 
         }
 
         public Vector2 GetPredictedLocation(float distance)
@@ -59,7 +60,7 @@ namespace BieleStudios.GitHubGameOff.Controllers
                 currentWaypoint = levelController.Waypoints[currentWaypointCursor].transform.position;
             }
 
-            this.transform.position = Vector2.MoveTowards(transform.position, currentWaypoint, speed);
+            this.transform.position = Vector2.MoveTowards(transform.position, currentWaypoint, Speed);
         }
     }
 }

@@ -7,6 +7,8 @@ namespace BieleStudios.GitHubGameOff.Controllers
 {
     public class TowerController : MonoBehaviour
     {
+        private LevelController levelController;
+
         [Header("Projectile Settings")]
         public bool HasProjectileAttack;
         public Projectile Projectile;
@@ -25,6 +27,8 @@ namespace BieleStudios.GitHubGameOff.Controllers
         // Start is called before the first frame update
         void Start()
         {
+            levelController = GameObject.Find("SceneScriptsObject").GetComponent<LevelController>();
+
             towerRange = GetComponent<CircleCollider2D>();
             enemiesInRange = new List<GameObject>();
 
@@ -87,11 +91,45 @@ namespace BieleStudios.GitHubGameOff.Controllers
 
         public void FindTarget()
         {
+            if (enemiesInRange.Count < 1) return;
+
             if (enemiesInRange.Count.Equals(1))
             {
                 target = enemiesInRange[0];
                 hasTarget = true;
+                return;
             }
+
+            EnemyController furthestEnemy = enemiesInRange[0].GetComponent<EnemyController>(); 
+
+            foreach(GameObject enemy in enemiesInRange)
+            {
+                EnemyController enemyController = enemy.GetComponent<EnemyController>();
+
+                if (enemyController.GetCurrentWaypoint() < furthestEnemy.GetCurrentWaypoint())
+                {
+                    continue;
+                }
+                else if(enemyController.GetCurrentWaypoint() > furthestEnemy.GetCurrentWaypoint())
+                {
+                    furthestEnemy = enemyController;
+                }
+                else if(enemyController.GetCurrentWaypoint() == furthestEnemy.GetCurrentWaypoint())
+                {
+                    Vector2 nextWaypoint = levelController.Waypoints[enemyController.GetCurrentWaypoint()].transform.position;
+                    float distanceA = Vector2.Distance(enemyController.transform.position, nextWaypoint);
+                    float distanceB = Vector2.Distance(furthestEnemy.transform.position, nextWaypoint);
+
+                    if(distanceA < distanceB)
+                    {
+                        furthestEnemy = enemyController;
+                    }
+                }
+            }
+
+            target = furthestEnemy.gameObject;
+            hasTarget = true;
+
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
