@@ -2,19 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelController : MonoBehaviour
+namespace BieleStudios.GitHubGameOff.Controllers
 {
-    public List<GameObject> Waypoints;
-
-    // Start is called before the first frame update
-    void Start()
+    public class LevelController : MonoBehaviour
     {
-        
-    }
+        public List<GameObject> Waypoints;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Start is called before the first frame update
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }
